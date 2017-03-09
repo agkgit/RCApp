@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  rcapp
-//
-//  Created by Arseniy Krupenin on 26.02.17.
-//  Copyright © 2017 Arseniy Krupenin. All rights reserved.
-//
 
 import UIKit
 import CoreData

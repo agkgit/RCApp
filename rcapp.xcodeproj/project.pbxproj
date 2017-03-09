@@ -13,7 +13,28 @@
 		AE2FD9871E62D04300A32C50 /* rcapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE2FD9851E62D04300A32C50 /* rcapp.xcdatamodeld */; };
 		AE2FD9891E62D04300A32C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2FD9881E62D04300A32C50 /* Assets.xcassets */; };
 		AE2FD98C1E62D04300A32C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2FD98A1E62D04300A32C50 /* LaunchScreen.storyboard */; };
+		AEF046091E71F7340008430C /* RedConnectCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF046081E71F7340008430C /* RedConnectCall.swift */; };
+		AEF0460B1E71FB140008430C /* DataFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF0460A1E71FB140008430C /* DataFormat.swift */; };
+		AEF9B0961E67806600FD5D16 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF9B0941E67806600FD5D16 /* Alamofire.framework */; };
+		AEF9B0971E67806600FD5D16 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF9B0951E67806600FD5D16 /* SwiftyJSON.framework */; };
+		AEF9B0991E67807D00FD5D16 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEF9B0941E67806600FD5D16 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEF9B09A1E67807D00FD5D16 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEF9B0951E67806600FD5D16 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEF9B09C1E67811300FD5D16 /* ApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF9B09B1E67811300FD5D16 /* ApiWrapper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEF9B0981E67807400FD5D16 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEF9B0991E67807D00FD5D16 /* Alamofire.framework in CopyFiles */,
+				AEF9B09A1E67807D00FD5D16 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE2FD97B1E62D04300A32C50 /* rcapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rcapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +45,11 @@
 		AE2FD9881E62D04300A32C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2FD98B1E62D04300A32C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE2FD98D1E62D04300A32C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF046081E71F7340008430C /* RedConnectCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedConnectCall.swift; sourceTree = "<group>"; };
+		AEF0460A1E71FB140008430C /* DataFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFormat.swift; sourceTree = "<group>"; };
+		AEF9B0941E67806600FD5D16 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		AEF9B0951E67806600FD5D16 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		AEF9B09B1E67811300FD5D16 /* ApiWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF9B0961E67806600FD5D16 /* Alamofire.framework in Frameworks */,
+				AEF9B0971E67806600FD5D16 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,7 @@
 			children = (
 				AE2FD97D1E62D04300A32C50 /* rcapp */,
 				AE2FD97C1E62D04300A32C50 /* Products */,
+				AEF9B0931E67806600FD5D16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +92,20 @@
 				AE2FD98A1E62D04300A32C50 /* LaunchScreen.storyboard */,
 				AE2FD98D1E62D04300A32C50 /* Info.plist */,
 				AE2FD9851E62D04300A32C50 /* rcapp.xcdatamodeld */,
+				AEF9B09B1E67811300FD5D16 /* ApiWrapper.swift */,
+				AEF046081E71F7340008430C /* RedConnectCall.swift */,
+				AEF0460A1E71FB140008430C /* DataFormat.swift */,
 			);
 			path = rcapp;
+			sourceTree = "<group>";
+		};
+		AEF9B0931E67806600FD5D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF9B0941E67806600FD5D16 /* Alamofire.framework */,
+				AEF9B0951E67806600FD5D16 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +118,7 @@
 				AE2FD9771E62D04300A32C50 /* Sources */,
 				AE2FD9781E62D04300A32C50 /* Frameworks */,
 				AE2FD9791E62D04300A32C50 /* Resources */,
+				AEF9B0981E67807400FD5D16 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -141,6 +183,9 @@
 			files = (
 				AE2FD9871E62D04300A32C50 /* rcapp.xcdatamodeld in Sources */,
 				AE2FD9811E62D04300A32C50 /* ViewController.swift in Sources */,
+				AEF0460B1E71FB140008430C /* DataFormat.swift in Sources */,
+				AEF9B09C1E67811300FD5D16 /* ApiWrapper.swift in Sources */,
+				AEF046091E71F7340008430C /* RedConnectCall.swift in Sources */,
 				AE2FD97F1E62D04300A32C50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +307,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rcapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = redhelper.rcapp;
@@ -274,6 +323,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rcapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = redhelper.rcapp;
@@ -301,6 +354,7 @@
 				AE2FD9921E62D04300A32C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
